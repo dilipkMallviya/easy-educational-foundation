@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#24113f">
+<title>Easy Educational Foundation | Education • Knowledge • संस्कार</title>
+<meta name="description" content="Easy Educational Foundation — education, publications, digital learning and Vaidik values. Explore VedVani Publications and learning resources.">
+<style>
+:root{--ink:#24113f;--plum:#452064;--gold:#d7a84b;--cream:#fffaf0;--muted:#6f6878;--line:#eadfce;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#282333;background:#fff}
+a{color:inherit;text-decoration:none}.top{background:var(--ink);color:#fff;text-align:center;padding:9px 16px;font-size:13px;letter-spacing:.3px}
+header{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}
+.nav{max-width:1160px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}.mark{height:48px;width:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f5d78e,#b77b2d);color:var(--ink);font-size:24px;font-weight:bold;border:2px solid #f9e7bd}
+.brand strong{display:block;color:var(--ink);font-size:17px;letter-spacing:.5px}.brand small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;color:#43394e}nav a:hover{color:#a66c19}.menu{display:none}
+.hero{background:radial-gradient(circle at 80% 20%,#59377a 0,#32184e 35%,#1f1035 100%);color:#fff;padding:78px 22px 84px;overflow:hidden}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{color:#f2cf83;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:18px 0;color:#fff}.hero p{font-size:17px;line-height:1.7;color:#eee6f5;max-width:650px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 21px;border-radius:7px;font-weight:bold;font-size:14px}.primary{background:var(--gold);color:#24113f}.outline{border:1px solid #d9c8e6;color:#fff}
+.hero-card{background:#fff;color:var(--ink);border-radius:18px;padding:27px;box-shadow:0 22px 55px #10071e66;transform:rotate(2deg)}
+.hero-card .symbol{font-size:54px;text-align:center;margin-bottom:12px}.hero-card h3{text-align:center;margin:8px 0;font-size:22px}.hero-card p{text-align:center;color:#6b6075;font-size:14px;margin:8px 0 0}
+section{padding:68px 22px}.wrap{max-width:1120px;margin:auto}.section-head{text-align:center;margin:0 auto 36px;max-width:720px}.section-head .eyebrow{color:#a36b1d}.section-head h2{color:var(--ink);font-size:clamp(27px,3vw,38px);margin:12px 0}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid var(--line);border-radius:14px;padding:26px;background:#fff;box-shadow:0 8px 25px #2b17300a}.card .icon{font-size:34px}.card h3{color:var(--ink);margin:15px 0 9px}.card p{color:var(--muted);line-height:1.65;font-size:14px;min-height:68px}.text-link{color:#986018;font-weight:bold;font-size:14px}
+.soft{background:var(--cream)}.catalog{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.book{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:#fff}.cover{height:145px;background:linear-gradient(135deg,#32164d,#754a85);display:grid;place-items:center;color:#f6d995;font-size:42px}.book-body{padding:17px}.tag{display:inline-block;background:#f6efdf;color:#79531d;border-radius:20px;padding:5px 9px;font-size:11px;font-weight:bold}.book h3{color:var(--ink);font-size:17px;margin:12px 0 7px}.book p{color:var(--muted);font-size:13px;line-height:1.5;min-height:38px}.book-foot{display:flex;justify-content:space-between;align-items:center;margin-top:15px}.price{font-weight:bold;color:var(--ink)}.soon{font-size:12px;color:#8a6b37;background:#fbf5e9;padding:8px 10px;border-radius:6px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.about-box{background:linear-gradient(145deg,#f9efd9,#fff);border:1px solid #ead8b4;border-radius:18px;padding:34px}.about-box .big{font-size:52px}.about h2{color:var(--ink);font-size:32px}.about p{color:var(--muted);line-height:1.8}
+.notice{background:#fff7e8;border:1px solid #efd9aa;border-radius:10px;padding:16px 18px;color:#62491f;font-size:13px;line-height:1.6;margin-top:22px}
+footer{background:#1f1035;color:#eee;padding:38px 22px}.foot{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.foot strong{font-size:17px}.foot p{color:#c9bfd3;font-size:13px;line-height:1.6}.foot a{color:#f0cd83}
+@media(max-width:760px){.hero-inner,.about{grid-template-columns:1fr}.hero{padding:56px 20px}.hero-card{max-width:360px;margin:8px auto 0}.cards,.catalog{grid-template-columns:1fr}.nav{align-items:flex-start;flex-wrap:wrap}nav{width:100%;overflow:auto;gap:17px;padding:7px 0 2px}nav a{white-space:nowrap;font-size:13px}.brand strong{font-size:15px}section{padding:52px 18px}}
+</style>
+</head>
+<body>
+<div class="top">A learning initiative of Easy Educational Foundation</div>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home" aria-label="Easy Educational Foundation home">
+      <span class="mark">ॐ</span><span><strong>EASY EDUCATIONAL FOUNDATION</strong><small>Education • Knowledge • संस्कार</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#initiatives">Our Initiatives</a><a href="#vedvani">VedVani Books</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Welcome to Easy Educational Foundation</div>
+      <h1>Education that builds knowledge, values and confidence.</h1>
+      <p>Bringing together quality learning resources, meaningful publications and value-based education under one foundation.</p>
+      <div class="actions"><a class="btn primary" href="#initiatives">Explore Our Initiatives</a><a class="btn outline" href="#vedvani">Explore Publications</a></div>
+    </div>
+    <div class="hero-card"><div class="symbol">📚 ॐ</div><h3>Learn • Read • Grow</h3><p>Knowledge for every learner. Wisdom for every generation.</p></div>
+  </div>
+</section>
+
+<section id="initiatives">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Our Initiatives</div><h2>One Foundation, Many Learning Paths</h2><p>Explore our educational and publishing initiatives. More services and sections can be added as the foundation grows.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">📖</div><h3>VedVani Publications</h3><p>Vaidik texts, stotras, mantras, devotional books and educational publications in accessible formats.</p><a class="text-link" href="#vedvani">Explore VedVani →</a></article>
+      <article class="card"><div class="icon">🏫</div><h3>Vaidik School Harda</h3><p>School information, admissions, activities, facilities and updates will be available in this section.</p><span class="soon">School link coming soon</span></article>
+      <article class="card"><div class="icon">✏️</div><h3>Easy Education</h3><p>Learning resources, English-learning materials and student-focused educational content.</p><a class="text-link" href="#contact">Enquire →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="soft" id="vedvani">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Our Publishing Initiative</div><h2>VedVani Publications</h2><p>A growing digital collection of spiritual, Vaidik and educational books. Free reading resources and paid digital editions will be listed here.</p></div>
+    <div class="catalog">
+      <article class="book"><div class="cover">🕉️</div><div class="book-body"><span class="tag">Vaidik Literature</span><h3>Vaidik Granth Collection</h3><p>Selected Vaidik texts and reading resources.</p><div class="book-foot"><span class="price">Free & Paid</span><span class="soon">Catalogue soon</span></div></div></article>
+      <article class="book"><div class="cover">🌺</div><div class="book-body"><span class="tag">Stotra Collection</span><h3>Stotra & Kavach</h3><p>Stotras, kavach and devotional texts in reader-friendly formats.</p><div class="book-foot"><span class="price">Free & Paid</span><span class="soon">Catalogue soon</span></div></div></article>
+      <article class="book"><div class="cover">📿</div><div class="book-body"><span class="tag">Mantra Collection</span><h3>Mantra & Pathan</h3><p>Mantra collections and simplified Sanskrit reading editions.</p><div class="book-foot"><span class="price">Free & Paid</span><span class="soon">Catalogue soon</span></div></div></article>
+    </div>
+    <div class="notice"><strong>Online book sales are being prepared.</strong> Book prices, preview pages, secure payment and automatic PDF delivery will be activated after the book files and payment account are connected. No payment is collected on this preview website.</div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div><div class="eyebrow" style="color:#a36b1d">About the Foundation</div><h2>Learning with purpose. Publishing with care.</h2><p>Easy Educational Foundation brings educational resources and publications together with a commitment to knowledge, learning and values. This website is the central digital home for the foundation’s initiatives.</p><p>Our website will continue to grow with new books, school information and learning resources.</p></div>
+    <div class="about-box"><div class="big">🌿</div><h3 style="color:#32184e;font-size:23px">Our Vision</h3><p>To make useful knowledge and quality learning resources easier to discover and access.</p><h3 style="color:#32184e;font-size:23px">Our Focus</h3><p>Education • Publications • Vaidik Knowledge • Student Development</p></div>
+  </div>
+</section>
+
+<section class="soft" id="contact">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Stay Connected</div><h2>Contact Easy Educational Foundation</h2><p>For publication enquiries, educational resources and collaboration, please get in touch.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">📚</div><h3>Book Enquiries</h3><p>Ask about VedVani Publications titles and upcoming digital editions.</p></article>
+      <article class="card"><div class="icon">🎓</div><h3>Education</h3><p>Enquiries about learning resources and educational initiatives.</p></article>
+      <article class="card"><div class="icon">✉️</div><h3>Contact Details</h3><p>Official email, phone and social links will be added here.</p><span class="soon">Contact details to be added</span></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="foot"><div><strong>EASY EDUCATIONAL FOUNDATION</strong><p>Education • Knowledge • संस्कार</p></div><div><p>VedVani Publications · Easy Education · Vaidik School Harda</p><p>© <span id="year"></span> Easy Educational Foundation. All rights reserved.</p></div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
